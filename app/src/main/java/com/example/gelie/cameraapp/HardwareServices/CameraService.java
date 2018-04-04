@@ -2,6 +2,7 @@ package com.example.gelie.cameraapp.HardwareServices;
 
 import android.content.Context;
 import android.content.pm.PackageManager;
+import android.hardware.Camera;
 
 public class CameraService {
 
@@ -13,6 +14,20 @@ public class CameraService {
             // no camera on this device
             return false;
         }
+    }
+
+    public static Camera getCameraInstance() {
+
+        Camera camera = null;
+        try {
+
+            camera = Camera.open();
+        }
+        catch (Exception exception) {
+            String ass = "SDFA";
+        }
+        return camera;
+
     }
 
 }

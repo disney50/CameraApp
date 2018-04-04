@@ -8,34 +8,25 @@ import android.hardware.Camera;
 import com.example.gelie.cameraapp.HardwareServices.CameraService;
 
 public class MainActivity extends AppCompatActivity {
-
+    static Camera camera = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-      //boolean hasCamera = CameraService.CanIAccessTheCamera(this);
+        boolean hasCamera = CameraService.CanIAccessTheCamera(this);
 
-      //if (!hasCamera) {
-        //  // TODO handle not camera
-          // return;
-       //}
+        if (!hasCamera) {
+          // TODO handle not camera
+        }
 
-        getCameraInstance();
+
+        Camera appCam;
+        appCam = CameraService.getCameraInstance();
 
     }
 
-    public static Camera getCameraInstance() {
-        Camera camera = null;
-        try {
-            camera = Camera.open();
-        }
-        catch (Exception exception) {
 
-        }
-        return camera;
-
-    }
 
 
 }
