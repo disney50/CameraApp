@@ -21,15 +21,19 @@ public class MainActivity extends AppCompatActivity {
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //Test if device has camera(s)
         boolean hasCamera = CameraService.CanIAccessTheCamera(this);
         if (!hasCamera)
         {
           // TODO handle not camera
         }
 
-
+        //Get an object of camera on device
         mCamera = getCameraInstance();
 
+        //calls the CameraView class that sets up our surfaceview,
+        // which in turn is set to the value of mCamView
         mCamView = new CameraView(this, mCamera);
         FrameLayout preview = (FrameLayout) findViewById(R.id.camera_preview2);
         preview.addView(mCamView);

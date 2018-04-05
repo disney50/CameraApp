@@ -35,6 +35,7 @@ public class CameraView extends SurfaceView implements SurfaceHolder.Callback
         try {
             mCamera.setPreviewDisplay(holder);
             mCamera.startPreview();
+            //IO moet by gevoeg word word!
             } catch (IOException e)
                 {
                 Log.d(TAG, "TODO" + e.getMessage());
