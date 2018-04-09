@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/mardus/Desktop/Repos/Cam/CameraApp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
+            "outputFile": "C:\\Development\\AndroidStudioProjects\\CameraApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
             "map": [
                 {
-                    "source": "/home/mardus/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/13c30f744cf298d65d1fa40207df3041/res/values-night-v8/values-night-v8.xml",
+                    "source": "C:\\Users\\gelie\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\f8eb59c655eb37a96a178e320d46809e\\res\\values-night-v8\\values-night-v8.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8",
                         "startColumns": "4,4,4,4,4,4,4",

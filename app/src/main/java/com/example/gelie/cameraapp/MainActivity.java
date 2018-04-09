@@ -4,6 +4,8 @@ package com.example.gelie.cameraapp;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.hardware.Camera;
+import android.view.View;
+import android.widget.Button;
 import android.widget.FrameLayout;
 
 
@@ -38,8 +40,24 @@ public class MainActivity extends AppCompatActivity {
         FrameLayout preview = (FrameLayout) findViewById(R.id.camera_preview2);
         preview.addView(mCamView);
 
-
+        //takes picture on button click
+        Button captureButton = findViewById(R.id.button_capture);
+        captureButton.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        mCamera.takePicture(null, null, mPicture);
+                    }
+                }
+        );
     }
+
+    Camera.PictureCallback mPicture = new Camera.PictureCallback() {
+        @Override
+        public void onPictureTaken(byte[] data, Camera camera) {
+
+        }
+    };
 
 
 

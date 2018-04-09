@@ -1,7 +1,4 @@
-#Wed Apr 04 14:26:10 SAST 2018
-base.0=/home/mardus/Desktop/Repos/Cam/CameraApp/app/build/intermediates/transforms/dexMerger/debug/26
-path.1=classes.dex
-renamed.1=classes2.dex
+#Mon Apr 09 07:38:23 CAT 2018
+base.0=C\:\\Development\\AndroidStudioProjects\\CameraApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 path.0=classes.dex
 renamed.0=classes.dex
-base.1=/home/mardus/Desktop/Repos/Cam/CameraApp/app/build/intermediates/transforms/dexMerger/debug/27

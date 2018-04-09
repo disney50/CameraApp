@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/mardus/Desktop/Repos/Cam/CameraApp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-tr/values-tr.xml",
+            "outputFile": "C:\\Development\\AndroidStudioProjects\\CameraApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-tr\\values-tr.xml",
             "map": [
                 {
-                    "source": "/home/mardus/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.0.aar/01c2b9439e1da878866eeb22d7874e6d/res/values-tr/values-tr.xml",
+                    "source": "C:\\Users\\gelie\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.0.aar\\6f32d1fe366b5c13aff97736ce374b71\\res\\values-tr\\values-tr.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/home/mardus/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/13c30f744cf298d65d1fa40207df3041/res/values-tr/values-tr.xml",
+                    "source": "C:\\Users\\gelie\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\f8eb59c655eb37a96a178e320d46809e\\res\\values-tr\\values-tr.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
