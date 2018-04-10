@@ -1,104 +1,108 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:2:1-23:12
-MERGED from [com.android.support:appcompat-v7:27.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.0.aar\f8eb59c655eb37a96a178e320d46809e\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\27b8ab0691661ffcb118c5abe49d620b\AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:support-fragment:27.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.0.aar\ae4fb3dd4fefe212864e2ddcd7a8b8ca\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:27.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.0.aar\7cf57d67a5ccbefe587895d594299e25\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:27.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.0.aar\5e21ccc1277416b1121c59560f2bae96\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:27.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.0.aar\c6d18f1a4c30e333f9bfc274769dda19\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:27.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.0.aar\a27ac1728b4fd2a8f13f5ba67193998a\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:27.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.0.aar\6f32d1fe366b5c13aff97736ce374b71\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\60386d1e9182b6cc93b86f1d259e1680\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\1da23407d54846a900bcfdc8cd3affca\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\5fa8a1f9f31262ea5fe00e07efbc12df\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\6a42cb00a6407bff2ce0ccba68c15130\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:2:1-23:12
+ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:2:1-24:12
+MERGED from [com.android.support:appcompat-v7:27.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.0.aar\8e0b9aeb15b179a3dc01cf3380c53068\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\52ad5ff37e795a9a9b48eebd2289f4d6\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:27.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.0.aar\a5a64a275803ef37fed9ba0b3b9fc6c9\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.0.aar\62154103560a3bb56c1811464effd3c6\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.0.aar\1ab41ae2e612182c706c48e775ac06b1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.0.aar\f501e475d7235fc19de7191888078643\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.0.aar\1b5c947ee670a7ff9598b2f25aca8835\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.0.aar\cf81bc85e2548a20ecaccff182bf073f\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\cb66efbd1eccb3f2aa545a2903a3f929\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\6a1919df6bcb5ce23ea4711aad474867\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\66f9ca0cb56d470f552496950be5cf4d\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\2a3960d8d3d6b502dcdce5c790135f31\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:2:1-24:12
 	package
 		ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:3:5-42
 		INJECTED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml
-		ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:2:1-23:12
+		ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:2:1-24:12
 		INJECTED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml
-		ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:2:1-23:12
+		ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:2:1-24:12
 		INJECTED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:5:5-81
+	android:name
+		ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:5:22-78
 uses-feature#android.hardware.camera
-ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:5:5-60
+ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:6:5-60
 	android:name
-		ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:5:19-57
+		ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:6:19-57
 uses-permission#android.permission.CAMERA
-ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:6:5-65
+ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:7:5-65
 	android:name
-		ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:6:22-62
+		ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:7:22-62
 application
-ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:7:5-21:19
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\27b8ab0691661ffcb118c5abe49d620b\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\27b8ab0691661ffcb118c5abe49d620b\AndroidManifest.xml:9:5-20
+ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:8:5-22:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\52ad5ff37e795a9a9b48eebd2289f4d6\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\52ad5ff37e795a9a9b48eebd2289f4d6\AndroidManifest.xml:9:5-20
 	android:supportsRtl
-		ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:13:9-35
 	android:label
-		ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:10:9-41
+		ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:11:9-41
 	android:roundIcon
-		ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:11:9-54
+		ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:12:9-54
 	android:icon
-		ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:9:9-43
+		ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:10:9-43
 	android:allowBackup
-		ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:8:9-35
+		ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:9:9-35
 	android:theme
-		ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:13:9-40
+		ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:14:9-40
 activity#com.example.gelie.cameraapp.MainActivity
-ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:14:9-20:20
+ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:15:9-21:20
 	android:name
-		ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:14:19-47
+		ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:15:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:15:13-19:29
+ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:16:13-20:29
 action#android.intent.action.MAIN
-ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:16:17-69
+ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:17:17-69
 	android:name
-		ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:16:25-66
+		ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:17:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:18:17-77
+ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:19:17-77
 	android:name
-		ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:18:27-74
+		ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:19:27-74
 uses-sdk
 INJECTED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml
 INJECTED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml
-MERGED from [com.android.support:appcompat-v7:27.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.0.aar\f8eb59c655eb37a96a178e320d46809e\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.0.aar\f8eb59c655eb37a96a178e320d46809e\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\27b8ab0691661ffcb118c5abe49d620b\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\27b8ab0691661ffcb118c5abe49d620b\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:support-fragment:27.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.0.aar\ae4fb3dd4fefe212864e2ddcd7a8b8ca\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.0.aar\ae4fb3dd4fefe212864e2ddcd7a8b8ca\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.0.aar\7cf57d67a5ccbefe587895d594299e25\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.0.aar\7cf57d67a5ccbefe587895d594299e25\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.0.aar\5e21ccc1277416b1121c59560f2bae96\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.0.aar\5e21ccc1277416b1121c59560f2bae96\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.0.aar\c6d18f1a4c30e333f9bfc274769dda19\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.0.aar\c6d18f1a4c30e333f9bfc274769dda19\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.0.aar\a27ac1728b4fd2a8f13f5ba67193998a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.0.aar\a27ac1728b4fd2a8f13f5ba67193998a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.0.aar\6f32d1fe366b5c13aff97736ce374b71\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.0.aar\6f32d1fe366b5c13aff97736ce374b71\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\60386d1e9182b6cc93b86f1d259e1680\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\60386d1e9182b6cc93b86f1d259e1680\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\1da23407d54846a900bcfdc8cd3affca\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\1da23407d54846a900bcfdc8cd3affca\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\5fa8a1f9f31262ea5fe00e07efbc12df\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\5fa8a1f9f31262ea5fe00e07efbc12df\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\6a42cb00a6407bff2ce0ccba68c15130\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\6a42cb00a6407bff2ce0ccba68c15130\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.0.aar\8e0b9aeb15b179a3dc01cf3380c53068\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.0.aar\8e0b9aeb15b179a3dc01cf3380c53068\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\52ad5ff37e795a9a9b48eebd2289f4d6\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\52ad5ff37e795a9a9b48eebd2289f4d6\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:27.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.0.aar\a5a64a275803ef37fed9ba0b3b9fc6c9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.0.aar\a5a64a275803ef37fed9ba0b3b9fc6c9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.0.aar\62154103560a3bb56c1811464effd3c6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.0.aar\62154103560a3bb56c1811464effd3c6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.0.aar\1ab41ae2e612182c706c48e775ac06b1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.0.aar\1ab41ae2e612182c706c48e775ac06b1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.0.aar\f501e475d7235fc19de7191888078643\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.0.aar\f501e475d7235fc19de7191888078643\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.0.aar\1b5c947ee670a7ff9598b2f25aca8835\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.0.aar\1b5c947ee670a7ff9598b2f25aca8835\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.0.aar\cf81bc85e2548a20ecaccff182bf073f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.0.aar\cf81bc85e2548a20ecaccff182bf073f\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\cb66efbd1eccb3f2aa545a2903a3f929\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\cb66efbd1eccb3f2aa545a2903a3f929\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\6a1919df6bcb5ce23ea4711aad474867\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\6a1919df6bcb5ce23ea4711aad474867\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\66f9ca0cb56d470f552496950be5cf4d\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\66f9ca0cb56d470f552496950be5cf4d\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\2a3960d8d3d6b502dcdce5c790135f31\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\2a3960d8d3d6b502dcdce5c790135f31\AndroidManifest.xml:20:5-44
 INJECTED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml
 INJECTED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
