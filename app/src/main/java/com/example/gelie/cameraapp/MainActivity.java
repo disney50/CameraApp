@@ -69,7 +69,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private static File getOutputMediaFile(int type){
-        File mediaStorageDir = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES), "CameraApp");
+        File mediaStorageDir = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES),
+                "CameraApp");
 
         if (! mediaStorageDir.exists()) {
             if (! mediaStorageDir.mkdirs()) {
@@ -103,9 +104,13 @@ public class MainActivity extends AppCompatActivity {
                 FileOutputStream fos = new FileOutputStream(pictureFile);
                 fos.write(data);
                 fos.close();
-            } catch (FileNotFoundException e) {
+            }
+
+            catch (FileNotFoundException e) {
                 Log.d(TAG, "File not found: " + e.getMessage());
-            } catch (IOException e) {
+            }
+
+            catch (IOException e) {
                 Log.d(TAG, "Error accessing file: " + e.getMessage());
             }
         }
