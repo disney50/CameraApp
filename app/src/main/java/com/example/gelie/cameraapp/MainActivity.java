@@ -113,6 +113,8 @@ public class MainActivity extends AppCompatActivity {
             catch (IOException e) {
                 Log.d(TAG, "Error accessing file: " + e.getMessage());
             }
+
+            mCamView.restartCameraView();
         }
     };
 
