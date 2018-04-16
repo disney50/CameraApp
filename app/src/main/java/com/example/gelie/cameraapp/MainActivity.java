@@ -1,6 +1,8 @@
 package com.example.gelie.cameraapp;
 
 
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
@@ -10,6 +12,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
+import android.widget.Toast;
 
 
 import com.example.gelie.cameraapp.HardwareServices.CameraService;
@@ -29,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
     private CameraView mCamView;
     public static final int MEDIA_TYPE_IMAGE = 1;
     public static final String TAG = "CameraApp";
+    private ImageView mImage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -49,8 +54,10 @@ public class MainActivity extends AppCompatActivity {
         //calls the CameraView class that sets up our surfaceview,
         // which in turn is set to the value of mCamView
         mCamView = new CameraView(this, mCamera);
-        FrameLayout preview = (FrameLayout) findViewById(R.id.camera_preview2);
+        FrameLayout preview = (FrameLayout) findViewById(R.id.camera_preview);
         preview.addView(mCamView);
+
+        mImage = findViewById(R.id.image_capture);
 
         //takes picture on button click
         Button captureButton = findViewById(R.id.button_capture);
@@ -114,9 +121,22 @@ public class MainActivity extends AppCompatActivity {
                 Log.d(TAG, "Error accessing file: " + e.getMessage());
             }
 
+            Bitmap bitmap = BitmapFactory.decodeByteArray(data, 0, data.length);
+            if(bitmap == null){
+                Log.d(TAG, "Captured image is empty");
+                return;
+            }
+
+            mImage.setImageBitmap(scaleDownBitmapImage(bitmap, 75, 75 ));
+
             mCamView.restartCameraView();
         }
     };
+
+    private Bitmap scaleDownBitmapImage(Bitmap bitmap, int newWidth, int newHeight) {
+        Bitmap resizedBitmap = Bitmap.createScaledBitmap(bitmap, newWidth, newHeight, true);
+        return resizedBitmap;
+    }
 
     @Override
     protected void onPause() {
