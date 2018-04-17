@@ -1,6 +1,7 @@
 package com.example.gelie.cameraapp;
 
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
@@ -12,8 +13,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
+import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 
 import com.example.gelie.cameraapp.HardwareServices.CameraService;
@@ -57,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
         FrameLayout preview = (FrameLayout) findViewById(R.id.camera_preview);
         preview.addView(mCamView);
 
-        mImage = findViewById(R.id.image_capture);
+        mImage = findViewById(R.id.button_gallery);
 
         //takes picture on button click
         Button captureButton = findViewById(R.id.button_capture);
@@ -66,6 +67,17 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         mCamera.takePicture(null, null, mPicture);
+                    }
+                }
+        );
+
+        ImageButton galleryButton = findViewById(R.id.button_gallery);
+        galleryButton.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent i = new Intent(getApplicationContext(), GalleryActivity.class);
+                        startActivity(i);
                     }
                 }
         );
@@ -127,7 +139,7 @@ public class MainActivity extends AppCompatActivity {
                 return;
             }
 
-            mImage.setImageBitmap(scaleDownBitmapImage(bitmap, 75, 75 ));
+            mImage.setImageBitmap(scaleDownBitmapImage(bitmap, 85, 85 ));
 
             mCamView.restartCameraView();
         }
