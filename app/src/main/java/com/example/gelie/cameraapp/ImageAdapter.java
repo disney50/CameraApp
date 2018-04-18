@@ -6,12 +6,9 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 
-import java.util.Vector;
-
 class ImageAdapter extends BaseAdapter {
 
     Context mContext;
-    Vector<ImageView> capturedImages;
 
     public ImageAdapter (Context context) {
         mContext = context;
