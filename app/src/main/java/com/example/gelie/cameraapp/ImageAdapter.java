@@ -1,14 +1,22 @@
 package com.example.gelie.cameraapp;
 
 import android.content.Context;
+import android.net.Uri;
+import android.os.Environment;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 
+import java.io.File;
+
 class ImageAdapter extends BaseAdapter {
 
-    Context mContext;
+    private Context mContext;
+
+    File root = new File(Environment.getExternalStorageDirectory() + File.separator + "CameraApp" + File.separator);
+
+    private File[] fileName = root.listFiles();
 
     public ImageAdapter (Context context) {
         mContext = context;
@@ -16,7 +24,7 @@ class ImageAdapter extends BaseAdapter {
 
     @Override
     public int getCount() {
-        return mThumbIds.length;
+        return fileName.length;
     }
 
     @Override
@@ -32,6 +40,8 @@ class ImageAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
+        Uri uri = Uri.fromFile(fileName[position]);
+
         ImageView mImageView;
 
         if (convertView == null) {
@@ -44,12 +54,7 @@ class ImageAdapter extends BaseAdapter {
             mImageView = (ImageView) convertView;
         }
 
-        mImageView.setImageResource(mThumbIds[position]);
+        mImageView.setImageURI(uri);
         return mImageView;
     }
-
-    private Integer[] mThumbIds = {
-            R.drawable.ic_launcher_background,
-            R.drawable.ic_launcher_foreground
-    };
 }

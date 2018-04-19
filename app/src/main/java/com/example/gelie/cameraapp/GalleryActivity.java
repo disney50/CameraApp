@@ -8,7 +8,6 @@ public class GalleryActivity extends AppCompatActivity {
 
     GridView gridView;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
