@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         //calls the CameraView class that sets up our surfaceview,
         // which in turn is set to the value of mCamView
         mCamView = new CameraView(this, mCamera);
-        FrameLayout preview = (FrameLayout) findViewById(R.id.camera_preview2);
+        FrameLayout preview = (FrameLayout) findViewById(R.id.camera_preview);
         preview.addView(mCamView);
 
         //takes picture on button click
