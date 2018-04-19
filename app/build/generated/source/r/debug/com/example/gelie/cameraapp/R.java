@@ -2873,7 +2873,7 @@ public final class R {
     public static final int icon_group=0x7f07003f;
     public static final int ifRoom=0x7f070040;
     public static final int image=0x7f070041;
-    public static final int image_thumbnail=0x7f070042;
+    public static final int image_capture=0x7f070042;
     public static final int info=0x7f070043;
     public static final int italic=0x7f070044;
     public static final int left=0x7f070045;

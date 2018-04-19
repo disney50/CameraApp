@@ -23,9 +23,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity
-            android:name="com.example.gelie.cameraapp.MainActivity"
-            android:screenOrientation="landscape" >
+        <activity android:name="com.example.gelie.cameraapp.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
