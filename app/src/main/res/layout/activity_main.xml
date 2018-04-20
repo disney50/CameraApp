@@ -21,7 +21,7 @@
         android:text="Capture" />
 
     <ImageButton
-        android:id="@+id/image_capture"
+        android:id="@+id/button_gallery"
         android:layout_width="85dp"
         android:layout_height="85dp"
         android:layout_alignParentBottom="true"
