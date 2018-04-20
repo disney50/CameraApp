@@ -87,9 +87,13 @@ public class MainActivity extends AppCompatActivity {
         return Uri.fromFile(getOutputMediaFile(type));
     }
 
-    private static File getOutputMediaFile(int type){
-        File mediaStorageDir = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES),
+    public static File GetCameraAppDir() {
+        return new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES),
                 "CameraApp");
+    }
+
+    private static File getOutputMediaFile(int type){
+        File mediaStorageDir = GetCameraAppDir();
 
         if (! mediaStorageDir.exists()) {
             if (! mediaStorageDir.mkdirs()) {

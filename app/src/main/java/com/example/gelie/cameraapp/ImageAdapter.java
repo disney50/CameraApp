@@ -1,6 +1,8 @@
 package com.example.gelie.cameraapp;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Environment;
 import android.view.View;
@@ -9,22 +11,22 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 
 import java.io.File;
+import java.util.ArrayList;
 
 class ImageAdapter extends BaseAdapter {
 
     private Context mContext;
+    ArrayList<String> mFolder;
 
-    File root = new File(Environment.getExternalStorageDirectory() + File.separator + "CameraApp" + File.separator);
-
-    private File[] fileName = root.listFiles();
-
-    public ImageAdapter (Context context) {
+    public ImageAdapter (Context context, ArrayList<String> folder) {
         mContext = context;
+        this.mFolder = folder;
+
     }
 
     @Override
     public int getCount() {
-        return fileName.length;
+        return mFolder.size();
     }
 
     @Override
@@ -34,27 +36,33 @@ class ImageAdapter extends BaseAdapter {
 
     @Override
     public long getItemId(int position) {
-        return 0;
+        return position;
     }
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
-        Uri uri = Uri.fromFile(fileName[position]);
+        //Uri uri = Uri.fromFile(fileName[position]);
 
-        ImageView mImageView;
+        ImageView mImageView = (ImageView) convertView;
 
-        if (convertView == null) {
+        if (mImageView == null) {
             mImageView = new ImageView(mContext);
             mImageView.setLayoutParams(new ViewGroup.LayoutParams(85, 85));
             mImageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
             mImageView.setPadding(8, 8, 8, 8);
         }
-        else {
-            mImageView = (ImageView) convertView;
-        }
 
-        mImageView.setImageURI(uri);
+        final BitmapFactory.Options options = new BitmapFactory.Options();
+        options.inJustDecodeBounds = true;
+        BitmapFactory.decodeFile(mFolder.get(position), options);
+
+        options.inSampleSize = 4;
+
+        options.inJustDecodeBounds = false;
+        Bitmap bitmap = BitmapFactory.decodeFile(mFolder.get(position), options);
+
+        mImageView.setImageBitmap(bitmap);
         return mImageView;
     }
 }
