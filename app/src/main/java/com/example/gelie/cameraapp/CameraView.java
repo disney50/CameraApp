@@ -18,7 +18,6 @@ import static android.content.ContentValues.TAG;
 public class CameraView extends SurfaceView implements SurfaceHolder.Callback
 {
 
-    private SurfaceHolder sHolder;
     private Camera mCamera;
 
     public CameraView(Context context, Camera camera)
@@ -26,7 +25,7 @@ public class CameraView extends SurfaceView implements SurfaceHolder.Callback
         super(context);
         mCamera = camera;
 
-        sHolder = getHolder();
+        SurfaceHolder sHolder = getHolder();
         sHolder.addCallback(this);
     }
 

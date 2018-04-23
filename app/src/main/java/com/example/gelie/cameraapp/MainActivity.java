@@ -18,6 +18,8 @@ import android.widget.ImageView;
 
 
 import com.example.gelie.cameraapp.HardwareServices.CameraService;
+import com.example.gelie.cameraapp.HardwareServices.GeneralService;
+import com.example.gelie.cameraapp.HardwareServices.StorageService;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -32,9 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
     static Camera mCamera = null;
     private CameraView mCamView;
-    public static final int MEDIA_TYPE_IMAGE = 1;
     public static final String TAG = "CameraApp";
-    private ImageView mImage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -46,7 +46,8 @@ public class MainActivity extends AppCompatActivity {
         boolean hasCamera = CameraService.CanIAccessTheCamera(this);
         if (!hasCamera)
         {
-          // TODO handle not camera
+            Log.d(TAG, "Camera access denied");
+            return;
         }
 
         //Get an object of camera on device
@@ -55,10 +56,8 @@ public class MainActivity extends AppCompatActivity {
         //calls the CameraView class that sets up our surfaceview,
         // which in turn is set to the value of mCamView
         mCamView = new CameraView(this, mCamera);
-        FrameLayout preview = (FrameLayout) findViewById(R.id.camera_preview);
+        FrameLayout preview = findViewById(R.id.camera_preview);
         preview.addView(mCamView);
-
-        mImage = findViewById(R.id.button_gallery);
 
         //takes picture on button click
         Button captureButton = findViewById(R.id.button_capture);
@@ -71,53 +70,28 @@ public class MainActivity extends AppCompatActivity {
                 }
         );
 
+        //navigates to galleryactivity on imagebutton click
         ImageButton galleryButton = findViewById(R.id.button_gallery);
         galleryButton.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent i = new Intent(getApplicationContext(), GalleryActivity.class);
-                        startActivity(i);
+                        Intent mIntent = new Intent(getApplicationContext(), GalleryActivity.class);
+                        startActivity(mIntent);
                     }
                 }
         );
 
     }
 
-    /*private static Uri getOutputMediaFileUri(int type) {
-        return Uri.fromFile(getOutputMediaFile(type));
-    }*/
-
-    private static File getOutputMediaFile(int type){
-        File mediaStorageDir = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES),
-                "CameraApp");
-
-        if (! mediaStorageDir.exists()) {
-            if (! mediaStorageDir.mkdirs()) {
-                Log.d(TAG, "failed to create directory");
-                return null;
-            }
-        }
-
-        String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-        File mediaFile;
-        if (type == MEDIA_TYPE_IMAGE) {
-            mediaFile = new File(mediaStorageDir.getPath() + File.separator + "IMG" + timeStamp + ".jpg");
-        }
-        else {
-            return null;
-        }
-
-        return mediaFile;
-    }
-
     Camera.PictureCallback mPicture = new Camera.PictureCallback() {
         @Override
         public void onPictureTaken(byte[] data, Camera camera) {
 
-            File pictureFile = getOutputMediaFile(MEDIA_TYPE_IMAGE);
+            //stores image via specified path
+            File pictureFile = StorageService.getOutputMediaFile();
             if (pictureFile == null) {
-                Log.d(TAG, "Error creating media file, check storage permissions" /*+ e.getMessage()*/);
+                Log.d(TAG, "Error creating media file, check storage permissions");
                 return;
             }
             try {
@@ -134,22 +108,20 @@ public class MainActivity extends AppCompatActivity {
                 Log.d(TAG, "Error accessing file: " + e.getMessage());
             }
 
+            //converts byte array to bitmap which can be displayed in imageview
             Bitmap bitmap = BitmapFactory.decodeByteArray(data, 0, data.length);
             if(bitmap == null){
                 Log.d(TAG, "Captured image is empty");
                 return;
             }
 
-            mImage.setImageBitmap(scaleDownBitmapImage(bitmap, 85, 85 ));
+            ImageView imageView = findViewById(R.id.button_gallery);
+
+            imageView.setImageBitmap(GeneralService.scaleDownBitmapImage(bitmap, 85, 85 ));
 
             mCamView.restartCameraView();
         }
     };
-
-    private Bitmap scaleDownBitmapImage(Bitmap bitmap, int newWidth, int newHeight) {
-        Bitmap resizedBitmap = Bitmap.createScaledBitmap(bitmap, newWidth, newHeight, true);
-        return resizedBitmap;
-    }
 
     @Override
     protected void onPause() {

@@ -27,6 +27,11 @@ public class GalleryActivity extends AppCompatActivity {
         gridView.setAdapter(new ImageAdapter(this, images));
     }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+    }
+
     private void getFromSdCard() {
         File file = StorageService.GetCameraAppDir();
 

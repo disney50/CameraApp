@@ -9,6 +9,8 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.ListAdapter;
 
+import com.example.gelie.cameraapp.HardwareServices.GeneralService;
+
 import java.util.ArrayList;
 
 class ImageAdapter extends BaseAdapter {
@@ -18,7 +20,7 @@ class ImageAdapter extends BaseAdapter {
 
     ImageAdapter(Context context, ArrayList<String> folder) {
         mContext = context;
-        this.mFolder = folder;
+        mFolder = folder;
 
     }
 
@@ -42,8 +44,6 @@ class ImageAdapter extends BaseAdapter {
 
         ImageView imageView;
 
-        //ImageView mImageView = (ImageView) convertView;
-
         if (convertView == null) {
             imageView = new ImageView(mContext);
             imageView.setLayoutParams(new ViewGroup.LayoutParams(85, 85));
@@ -63,7 +63,7 @@ class ImageAdapter extends BaseAdapter {
         options.inJustDecodeBounds = false;
         Bitmap bitmap = BitmapFactory.decodeFile(mFolder.get(position), options);
 
-        imageView.setImageBitmap(bitmap);
+        imageView.setImageBitmap(GeneralService.scaleDownBitmapImage(bitmap, 85, 85));
         return imageView;
     }
 }
