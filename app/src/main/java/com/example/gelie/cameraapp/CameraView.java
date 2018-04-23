@@ -7,6 +7,8 @@ import android.util.Log;
 import android.view.SurfaceView;
 import android.view.SurfaceHolder;
 
+import com.example.gelie.cameraapp.Services.GeneralServices;
+
 import java.io.IOException;
 
 import static android.content.ContentValues.TAG;
@@ -58,7 +60,7 @@ public class CameraView extends SurfaceView implements SurfaceHolder.Callback
             //IO moet by gevoeg word word!
             } catch (IOException e)
                 {
-                Log.d(TAG, "TODO" + e.getMessage());
+                Log.d(GeneralServices.TAG, "TODO" + e.getMessage());
                 }
     }
 

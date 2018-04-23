@@ -4,42 +4,37 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.GridView;
 
-import com.example.gelie.cameraapp.HardwareServices.StorageService;
+import com.example.gelie.cameraapp.Services.StorageService;
 
 import java.io.File;
 import java.util.ArrayList;
 
 public class GalleryActivity extends AppCompatActivity {
 
-    GridView gridView;
-    ArrayList<String> images;
-    File[] listFile;
+    GridView mGridView;
+    ArrayList<String> arrayOfFilePaths;
+    File[] listOfFiles;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gallery);
 
-        images = new ArrayList<>();
+        arrayOfFilePaths = new ArrayList<>();
         getFromSdCard();
 
-        gridView = findViewById(R.id.grid_gallery);
-        gridView.setAdapter(new ImageAdapter(this, images));
-    }
-
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
+        mGridView = findViewById(R.id.grid_gallery);
+        mGridView.setAdapter(new ImageAdapter(this, arrayOfFilePaths));
     }
 
     private void getFromSdCard() {
-        File file = StorageService.GetCameraAppDir();
+        File file = StorageService.getCameraAppDir();
 
         if (file.isDirectory()) {
-            listFile = file.listFiles();
+            listOfFiles = file.listFiles();
 
-            for (File aListFile : listFile) {
-                images.add(aListFile.getAbsolutePath());
+            for (File aFile : listOfFiles) {
+                arrayOfFilePaths.add(aFile.getAbsolutePath());
             }
         }
     }

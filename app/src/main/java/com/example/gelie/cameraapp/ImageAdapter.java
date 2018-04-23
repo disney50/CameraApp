@@ -7,9 +7,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
-import android.widget.ListAdapter;
 
-import com.example.gelie.cameraapp.HardwareServices.GeneralService;
+import com.example.gelie.cameraapp.Services.GeneralServices;
 
 import java.util.ArrayList;
 
@@ -47,8 +46,6 @@ class ImageAdapter extends BaseAdapter {
         if (convertView == null) {
             imageView = new ImageView(mContext);
             imageView.setLayoutParams(new ViewGroup.LayoutParams(85, 85));
-            imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
-            imageView.setPadding(8, 8, 8, 8);
         }
         else {
             imageView = (ImageView) convertView;
@@ -63,7 +60,7 @@ class ImageAdapter extends BaseAdapter {
         options.inJustDecodeBounds = false;
         Bitmap bitmap = BitmapFactory.decodeFile(mFolder.get(position), options);
 
-        imageView.setImageBitmap(GeneralService.scaleDownBitmapImage(bitmap, 85, 85));
+        imageView.setImageBitmap(GeneralServices.scaleDownBitmapImage(bitmap,85, 85));
         return imageView;
     }
 }
