@@ -103,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
                 Log.d(GeneralServices.TAG, "Error accessing file: " + e.getMessage());
             }
 
-            //converts byte array to bitmap which can be displayed in imageview
+            //converts byte array to bitmap which can be displayed in imageView
             Bitmap bitmap = BitmapFactory.decodeByteArray(data, 0, data.length);
             if(bitmap == null){
                 Log.d(GeneralServices.TAG, "Captured image is empty");

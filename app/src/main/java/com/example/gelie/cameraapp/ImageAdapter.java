@@ -3,6 +3,7 @@ package com.example.gelie.cameraapp;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -16,11 +17,12 @@ class ImageAdapter extends BaseAdapter {
 
     private Context mContext;
     private ArrayList<String> mFolder;
+    private LayoutInflater mInflater;
 
     ImageAdapter(Context context, ArrayList<String> folder) {
         mContext = context;
         mFolder = folder;
-
+        mInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
 
     @Override
@@ -41,14 +43,17 @@ class ImageAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
-        ImageView imageView;
+        final ViewHolder holder;
 
         if (convertView == null) {
-            imageView = new ImageView(mContext);
-            imageView.setLayoutParams(new ViewGroup.LayoutParams(85, 85));
+            holder = new ViewHolder();
+            convertView = mInflater.inflate(R.layout.gallery_item, null);
+            holder.imageView = convertView.findViewById(R.id.image_thumbnail);
+
+            convertView.setTag(holder);
         }
         else {
-            imageView = (ImageView) convertView;
+            holder = (ViewHolder) convertView.getTag();
         }
 
         final BitmapFactory.Options options = new BitmapFactory.Options();
@@ -60,7 +65,12 @@ class ImageAdapter extends BaseAdapter {
         options.inJustDecodeBounds = false;
         Bitmap bitmap = BitmapFactory.decodeFile(mFolder.get(position), options);
 
-        imageView.setImageBitmap(GeneralServices.scaleDownBitmapImage(bitmap,85, 85));
-        return imageView;
+        holder.imageView.setImageBitmap(GeneralServices.scaleDownBitmapImage(bitmap,85, 85));
+        return convertView;
     }
+
+    class ViewHolder {
+        ImageView imageView;
+    }
+
 }

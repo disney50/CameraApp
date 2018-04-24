@@ -9,5 +9,4 @@ public class GeneralServices {
     public static Bitmap scaleDownBitmapImage(Bitmap bitmap, int newWidth, int newHeight) {
         return Bitmap.createScaledBitmap(bitmap, newWidth, newHeight, true);
     }
-
 }
