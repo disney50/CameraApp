@@ -1,9 +1,11 @@
 package com.example.gelie.cameraapp;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.res.Configuration;
 import android.hardware.Camera;
 import android.util.Log;
+import android.view.Surface;
 import android.view.SurfaceView;
 import android.view.SurfaceHolder;
 
@@ -37,26 +39,25 @@ public class CameraView extends SurfaceView implements SurfaceHolder.Callback
     }
 
     @Override
-    public void surfaceCreated(SurfaceHolder holder)
-    {
-        Camera.Parameters parameters = mCamera.getParameters();
-
-        if (this.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
-            parameters.set("orientation", "landscape");
-            mCamera.setDisplayOrientation(0);
-            parameters.setRotation(0);
-        }
-        else {
-            parameters.set("orientation", "portrait");
-            mCamera.setDisplayOrientation(90);
-            parameters.setRotation(90);
-        }
-
-        mCamera.setParameters(parameters);
+    public void surfaceCreated(SurfaceHolder holder) {
 
         try {
             mCamera.setPreviewDisplay(holder);
             mCamera.startPreview();
+            Camera.Parameters parameters = mCamera.getParameters();
+
+            if (this.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
+                parameters.set("orientation", "landscape");
+                mCamera.setDisplayOrientation(0);
+                parameters.setRotation(0);
+            }
+            else {
+                parameters.set("orientation", "portrait");
+                mCamera.setDisplayOrientation(90);
+                parameters.setRotation(90);
+            }
+
+            mCamera.setParameters(parameters);
             //IO moet by gevoeg word word!
             } catch (IOException e)
                 {

@@ -1,9 +1,11 @@
 package com.example.gelie.cameraapp.Services;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.hardware.Camera;
 import android.util.Log;
+import android.view.Surface;
 
 public class CameraService
 {
