@@ -12,6 +12,7 @@ import android.view.SurfaceHolder;
 import com.example.gelie.cameraapp.Services.GeneralServices;
 
 import java.io.IOException;
+import java.util.List;
 
 import static android.content.ContentValues.TAG;
 
@@ -45,6 +46,25 @@ public class CameraView extends SurfaceView implements SurfaceHolder.Callback
             mCamera.setPreviewDisplay(holder);
             mCamera.startPreview();
             Camera.Parameters parameters = mCamera.getParameters();
+
+            List<Camera.Size> previewSizes = parameters.getSupportedPreviewSizes();
+            Camera.Size previewSize = previewSizes.get(0);
+            for (int i = 0; i < previewSizes.size(); i++) {
+                if (previewSizes.get(i).width > previewSize.width)
+                    previewSize = previewSizes.get(i);
+            }
+            parameters.setPreviewSize(previewSize.width, previewSize.height);
+
+            List<Camera.Size> pictureSizes = parameters.getSupportedPictureSizes();
+            Camera.Size pictureSize = pictureSizes.get(0);
+            for(int i=0;i<pictureSizes.size();i++)
+            {
+                if(pictureSizes.get(i).width > pictureSize.width)
+                    pictureSize = pictureSizes.get(i);
+            }
+            parameters.setPictureSize(pictureSize.width, pictureSize.height);
+
+            parameters.setFocusMode(Camera.Parameters.FOCUS_MODE_CONTINUOUS_PICTURE);
 
             if (this.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
                 parameters.set("orientation", "landscape");
