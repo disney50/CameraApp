@@ -120,18 +120,12 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onPause() {
+
         super.onPause();
-        if (mCamera == null) {
-            try {
-                // release the camera immediately on pause event
-                // releaseCamera();
-                mCamera.stopPreview();
-                mCamera.setPreviewCallback(null);
-                mCamera.release();
-                mCamera = null;
-            } catch (Exception e) {
-                Log.d(GeneralServices.TAG, "Exception: " + e.getMessage());
-            }
+        mCamView = null;
+        if (mCamera != null) {
+            mCamera.release();
+            mCamera = null;
         }
     }
 
@@ -139,16 +133,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
 
         super.onResume();
-        try {
+        if(mCamera == null) {
             mCamera = getCameraInstance();
-
-            mCamera.setPreviewCallback(null);
-            mCamView = new CameraView(this, mCamera);// set preview
+        }
+        if(mCamView == null) {
+            mCamView = new CameraView(this, mCamera);
             FrameLayout preview = findViewById(R.id.camera_preview);
+            preview.removeAllViews();
             preview.addView(mCamView);
-            mCamView.restartCameraView();
-        } catch (Exception e) {
-            Log.d(GeneralServices.TAG, "Error starting camera preview: " + e.getMessage());
         }
     }
 }
