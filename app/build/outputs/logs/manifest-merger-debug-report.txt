@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:2:1-29:12
-INJECTED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:2:1-29:12
-INJECTED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:2:1-29:12
-INJECTED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:2:1-29:12
+ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:2:1-31:12
 MERGED from [com.android.support:appcompat-v7:27.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.0.aar\14b99a89a0e8a26f20be8dd0347796e9\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\a06458cca637a9b5bbcb56c0dc185a97\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:support-fragment:27.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.0.aar\aa680f25c186d65e4cba52ebde94344c\AndroidManifest.xml:17:1-22:12
@@ -16,20 +16,20 @@ MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\gelie\.gradle\
 MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\8a652199b512d453162726b8b2f6ed9b\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\c64ff96bef98dc8cb03b007631eb1ad1\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.0] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\ae4f52962456cdaa7b3818146d0f527c\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:2:1-29:12
-INJECTED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:2:1-29:12
-INJECTED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:2:1-31:12
 	package
 		ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:3:5-42
 		INJECTED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml
-		ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:2:1-29:12
+		ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:2:1-31:12
 		INJECTED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml
-		ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:2:1-29:12
+		ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:2:1-31:12
 		INJECTED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:2:11-69
@@ -46,7 +46,7 @@ ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidMa
 	android:name
 		ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:9:22-62
 application
-ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:11:5-27:19
+ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:11:5-29:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\a06458cca637a9b5bbcb56c0dc185a97\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\gelie\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\a06458cca637a9b5bbcb56c0dc185a97\AndroidManifest.xml:9:5-20
 	android:supportsRtl
@@ -62,25 +62,29 @@ MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\ge
 	android:theme
 		ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:17:9-47
 activity#com.example.gelie.cameraapp.MainActivity
-ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:18:9-25:20
+ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:18:9-26:20
 	android:theme
-		ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:19:13-63
+		ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:20:13-63
 	android:name
-		ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:18:19-47
+		ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:19:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:20:13-24:29
+ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:21:13-25:29
 action#android.intent.action.MAIN
-ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:21:17-69
+ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:22:17-69
 	android:name
-		ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:21:25-66
+		ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:22:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:23:17-77
+ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:24:17-77
 	android:name
-		ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:23:27-74
+		ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:24:27-74
 activity#com.example.gelie.cameraapp.GalleryActivity
-ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:26:9-53
+ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:27:9-53
 	android:name
-		ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:26:19-50
+		ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:27:19-50
+activity#com.example.gelie.cameraapp.ImageActivity
+ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:28:9-60
+	android:name
+		ADDED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml:28:19-48
 uses-sdk
 INJECTED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Development\AndroidStudioProjects\CameraApp\app\src\main\AndroidManifest.xml

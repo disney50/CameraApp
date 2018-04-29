@@ -104,12 +104,12 @@
         "source": "C:\\Users\\gelie\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\14b99a89a0e8a26f20be8dd0347796e9\\res\\drawable-xxhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
-        "merged": "C:\\Development\\AndroidStudioProjects\\CameraApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\gelie\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\14b99a89a0e8a26f20be8dd0347796e9\\res\\drawable-hdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
-    },
-    {
         "merged": "C:\\Development\\AndroidStudioProjects\\CameraApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_black_16dp.png.flat",
         "source": "C:\\Users\\gelie\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\14b99a89a0e8a26f20be8dd0347796e9\\res\\drawable-xxxhdpi-v4\\abc_ic_star_black_16dp.png"
+    },
+    {
+        "merged": "C:\\Development\\AndroidStudioProjects\\CameraApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\gelie\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\14b99a89a0e8a26f20be8dd0347796e9\\res\\drawable-hdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Development\\AndroidStudioProjects\\CameraApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_longpressed_holo.9.png.flat",
@@ -1062,6 +1062,10 @@
     {
         "merged": "C:\\Development\\AndroidStudioProjects\\CameraApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_abc_edit_text_material.xml.flat",
         "source": "C:\\Users\\gelie\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\14b99a89a0e8a26f20be8dd0347796e9\\res\\drawable-v21\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "C:\\Development\\AndroidStudioProjects\\CameraApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_image.xml.flat",
+        "source": "C:\\Development\\AndroidStudioProjects\\CameraApp\\app\\src\\main\\res\\layout\\activity_image.xml"
     },
     {
         "merged": "C:\\Development\\AndroidStudioProjects\\CameraApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",

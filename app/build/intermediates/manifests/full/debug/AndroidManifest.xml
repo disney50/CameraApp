@@ -33,6 +33,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.example.gelie.cameraapp.GalleryActivity" />
+        <activity android:name="com.example.gelie.cameraapp.ImageActivity" />
     </application>
 
 </manifest>
