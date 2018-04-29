@@ -16,14 +16,20 @@ public class ImageActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_image);
 
-        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY| View.SYSTEM_UI_FLAG_FULLSCREEN| View.SYSTEM_UI_FLAG_HIDE_NAVIGATION);
+        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY| View.SYSTEM_UI_FLAG_FULLSCREEN);
 
         String filePath = getIntent().getStringExtra("filePath");
-        Bitmap bitmap = BitmapFactory.decodeFile(filePath);
 
-        if (bitmap != null) {
-            imageView = findViewById(R.id.image_display);
-            imageView.setImageBitmap(bitmap);
-        }
+        final BitmapFactory.Options options = new BitmapFactory.Options();
+        options.inJustDecodeBounds = true;
+        BitmapFactory.decodeFile(filePath, options);
+
+        options.inSampleSize = 4;
+
+        options.inJustDecodeBounds = false;
+        Bitmap bitmap = BitmapFactory.decodeFile(filePath, options);
+
+        imageView = findViewById(R.id.image_display);
+        imageView.setImageBitmap(bitmap);
     }
 }
