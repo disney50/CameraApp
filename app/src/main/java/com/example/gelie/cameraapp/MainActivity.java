@@ -15,6 +15,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 
 
+import com.example.gelie.cameraapp.Services.BitmapService;
 import com.example.gelie.cameraapp.Services.CameraService;
 import com.example.gelie.cameraapp.Services.GeneralServices;
 import com.example.gelie.cameraapp.Services.StorageService;
@@ -114,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
 
             ImageView imageView = findViewById(R.id.button_gallery);
 
-            imageView.setImageBitmap(GeneralServices.scaleDownBitmapImage(bitmap, 85, 85 ));
+            imageView.setImageBitmap(bitmap);
 
             mCamView.restartCameraView();
         }
@@ -124,6 +125,17 @@ public class MainActivity extends AppCompatActivity {
     protected void onPause() {
 
         super.onPause();
+        mCamView = null;
+        if (mCamera != null) {
+            mCamera.release();
+            mCamera = null;
+        }
+    }
+
+    @Override
+    protected void onDestroy() {
+
+        super.onDestroy();
         mCamView = null;
         if (mCamera != null) {
             mCamera.release();

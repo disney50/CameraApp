@@ -9,18 +9,17 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 
+import com.example.gelie.cameraapp.Services.BitmapService;
 import com.example.gelie.cameraapp.Services.GeneralServices;
 
 import java.util.ArrayList;
 
 class ImageAdapter extends BaseAdapter {
 
-    private Context mContext;
     private ArrayList<String> mFolder;
     private LayoutInflater mInflater;
 
     ImageAdapter(Context context, ArrayList<String> folder) {
-        mContext = context;
         mFolder = folder;
         mInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
@@ -56,16 +55,9 @@ class ImageAdapter extends BaseAdapter {
             holder = (ViewHolder) convertView.getTag();
         }
 
-        final BitmapFactory.Options options = new BitmapFactory.Options();
-        options.inJustDecodeBounds = true;
-        BitmapFactory.decodeFile(mFolder.get(position), options);
+        Bitmap bitmap = BitmapService.decodeSampledBitmapFromString(mFolder.get(position));
 
-        options.inSampleSize = 4;
-
-        options.inJustDecodeBounds = false;
-        Bitmap bitmap = BitmapFactory.decodeFile(mFolder.get(position), options);
-
-        holder.imageView.setImageBitmap(GeneralServices.scaleDownBitmapImage(bitmap,85, 85));
+        holder.imageView.setImageBitmap(BitmapService.downscaleToMaxAllowedDimension(bitmap));
         return convertView;
     }
 

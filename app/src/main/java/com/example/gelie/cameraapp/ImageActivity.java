@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.example.gelie.cameraapp.Services.BitmapService;
+
 public class ImageActivity extends AppCompatActivity {
 
     ImageView imageView;
@@ -20,14 +22,7 @@ public class ImageActivity extends AppCompatActivity {
 
         String filePath = getIntent().getStringExtra("filePath");
 
-        final BitmapFactory.Options options = new BitmapFactory.Options();
-        options.inJustDecodeBounds = true;
-        BitmapFactory.decodeFile(filePath, options);
-
-        options.inSampleSize = 4;
-
-        options.inJustDecodeBounds = false;
-        Bitmap bitmap = BitmapFactory.decodeFile(filePath, options);
+        Bitmap bitmap = BitmapService.decodeSampledBitmapFromString(filePath);
 
         imageView = findViewById(R.id.image_display);
         imageView.setImageBitmap(bitmap);
