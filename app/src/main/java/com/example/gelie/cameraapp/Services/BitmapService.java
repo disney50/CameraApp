@@ -17,24 +17,7 @@ public class BitmapService {
         return BitmapFactory.decodeFile(filePath, options);
     }
 
-    /*public static Bitmap scaleDownBitmapImage(Bitmap bitmap, int newWidth, int newHeight) {
+    public static Bitmap scaleDownBitmapImage(Bitmap bitmap, int newWidth, int newHeight) {
         return Bitmap.createScaledBitmap(bitmap, newWidth, newHeight, true);
-    }*/
-
-    public static Bitmap downscaleToMaxAllowedDimension(Bitmap bitmap) {
-        int MAX_ALLOWED_RESOLUTION = 1024;
-        int outWidth;
-        int outHeight;
-        int inWidth = bitmap.getWidth();
-        int inHeight = bitmap.getHeight();
-        if(inWidth > inHeight){
-            outWidth = MAX_ALLOWED_RESOLUTION;
-            outHeight = (inHeight * MAX_ALLOWED_RESOLUTION) / inWidth;
-        } else {
-            outHeight = MAX_ALLOWED_RESOLUTION;
-            outWidth = (inWidth * MAX_ALLOWED_RESOLUTION) / inHeight;
-        }
-
-        return Bitmap.createScaledBitmap(bitmap, outWidth, 85, false);
     }
 }

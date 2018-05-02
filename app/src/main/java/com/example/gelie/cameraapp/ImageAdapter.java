@@ -57,12 +57,11 @@ class ImageAdapter extends BaseAdapter {
 
         Bitmap bitmap = BitmapService.decodeSampledBitmapFromString(mFolder.get(position));
 
-        holder.imageView.setImageBitmap(BitmapService.downscaleToMaxAllowedDimension(bitmap));
+        holder.imageView.setImageBitmap(BitmapService.scaleDownBitmapImage(bitmap,85, 85));
         return convertView;
     }
 
     class ViewHolder {
         ImageView imageView;
     }
-
 }
