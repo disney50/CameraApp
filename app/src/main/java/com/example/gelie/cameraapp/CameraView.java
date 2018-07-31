@@ -43,8 +43,6 @@ public class CameraView extends SurfaceView implements SurfaceHolder.Callback
     public void surfaceCreated(SurfaceHolder holder) {
 
         try {
-            mCamera.setPreviewDisplay(holder);
-            mCamera.startPreview();
             Camera.Parameters parameters = mCamera.getParameters();
 
             List<Camera.Size> previewSizes = parameters.getSupportedPreviewSizes();
@@ -78,6 +76,8 @@ public class CameraView extends SurfaceView implements SurfaceHolder.Callback
             }
 
             mCamera.setParameters(parameters);
+            mCamera.setPreviewDisplay(holder);
+            mCamera.startPreview();
             //IO moet by gevoeg word word!
             } catch (IOException e)
                 {
